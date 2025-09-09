@@ -1,4 +1,4 @@
-import { useStore } from '@nanostores/react';
+/*import { useStore } from '@nanostores/react';
 import { motion, type HTMLMotionProps, type Variants } from 'framer-motion';
 import { computed } from 'nanostores';
 import { memo, useCallback, useEffect } from 'react';
@@ -16,6 +16,9 @@ import { cubicEasingFn } from '~/utils/easings';
 import { renderLogger } from '~/utils/logger';
 import { EditorPanel } from './EditorPanel';
 import { Preview } from './Preview';
+*/
+
+export { EnhancedWorkbench as Workbench } from './EnhancedWorkbench';
 
 interface WorkspaceProps {
   chatStarted?: boolean;
@@ -52,6 +55,7 @@ const workbenchVariants = {
   },
 } satisfies Variants;
 
+/*
 export const Workbench = memo(({ chatStarted, isStreaming }: WorkspaceProps) => {
   renderLogger.trace('Workbench');
 
@@ -185,3 +189,4 @@ const View = memo(({ children, ...props }: ViewProps) => {
     </motion.div>
   );
 });
+*/
